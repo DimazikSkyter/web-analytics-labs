@@ -44,9 +44,9 @@ def build():
                 i += 1
                 return f'<h2 id="section-{i}">{match.group(1)}</h2>'
             report = re.sub(r'<h2>(.*?)</h2>', heading_id, report)
-            proof = SITE/'assets'/'site-overview.png'
+            proof = SITE/'assets'/'site-overview.jpg'
             if proof.exists():
-                report = report.replace('<div class="site-proof"></div>', '<figure><img src="assets/site-overview.png" alt="Главная страница учебного сайта с меню пяти работ" loading="lazy" width="1265" height="712"><figcaption>Рисунок 1 — опубликованный учебный сайт, 06.10.2026.</figcaption></figure>')
+                report = report.replace('<div class="site-proof"></div>', '<figure><a href="assets/site-overview.jpg"><img src="assets/site-overview.jpg" alt="Главная страница учебного сайта с меню пяти работ" loading="lazy" width="1548" height="1232"></a><figcaption>Рисунок 1 — опубликованный учебный сайт, 06.10.2026. Снимок можно открыть в полном размере.</figcaption></figure>')
             else:
                 report = report.replace('<div class="site-proof"></div>', '')
             body = f'<span class="tag">{escape(status[str(n)])}</span>{controls}{toc}<article class="paper"><header class="report-head"><p>Московский политехнический университет</p><p>Дисциплина «Веб-аналитика» · Лабораторная работа №{n} · Москва, 2026</p></header>{report}</article>'
