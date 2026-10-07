@@ -1,6 +1,62 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Лабораторные работы 1–5 · Веб-аналитика</title><meta name="description" content="Отчёты и исследование посещаемости на одном учебном сайте."><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><script src="assets/counters.js" defer></script><script src="assets/ui.js" defer></script></head>
-<body><a class="skip" href="#main">К содержанию</a><aside class="sidebar"><a class="brand" href="index.html">Веб-аналитика<small>Московский Политех · ВА78БЗ</small></a><nav aria-label="Лабораторные работы"><a href="index.html" aria-current="page">Обзор работ</a><a href="lab-1.html">01 · Внутренняя статистика</a><a href="lab-2.html">02 · Внешняя статистика</a><a href="lab-3.html">03 · LiveInternet</a><a href="lab-4.html">04 · SberAds / Топ-100</a><a href="lab-5.html">05 · Рейтинг Mail.ru / MyTracker</a></nav><footer>Лабораторные работы 1–5<br>Октябрь 2026</footer></aside><main id="main"><span class="eyebrow">Учебный стенд / Обзор</span><h1>Лабораторные работы 1–5</h1><p class="lead">Отчёты и исследование посещаемости на одном учебном сайте.</p><div class="notice"><p><strong>Сбор статистики готовится.</strong> Для практических работ требуется наблюдение в течение 1–2 недель и минимум 50 пользователей. Данные сервиса появятся после регистрации счётчиков; незавершённые измерения отмечены в отчётах.</p></div>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Лабораторные работы 1–5 · Веб-аналитика</title><!--LiveInternet counter--><script>
+new Image().src = "https://counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+
+";"+Math.random();</script><!--/LiveInternet-->
+<script id="counter-config" type="application/json">{"liveinternet": {"registered_url": "https://dimazikskyter.github.io/web-analytics-labs/", "logo": "52.6", "code_received": "2026-10-07"}, "sberads": {"id": 7752692, "blocks_attribute": "analytics-block", "rating_status": "moderation", "created": "2026-10-07"}, "mytracker": {"id": 3800180, "app_id": 1084943, "created": "2026-10-07"}}</script><meta name="description" content="Отчёты и исследование посещаемости на одном учебном сайте."><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><script src="assets/counters.js" defer></script><script src="assets/ui.js" defer></script></head>
+<body><!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7752692,
+            widgetColor: "313efb",
+            attributes_dataset: [ "analytics-block" ],
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=7752692" alt="Топ-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter --><!-- Top.Mail.Ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3800180", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "tmr-code");
+</script>
+<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3800180;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+<!-- /Top.Mail.Ru counter -->
+<a class="skip" href="#main">К содержанию</a><aside class="sidebar"><a class="brand" href="index.html">Веб-аналитика<small>Московский Политех · ВА78БЗ</small></a><nav aria-label="Лабораторные работы" data-analytics-block="lab-navigation"><a href="index.html" aria-current="page">Обзор работ</a><a href="lab-1.html">01 · Внутренняя статистика</a><a href="lab-2.html">02 · Внешняя статистика</a><a href="lab-3.html">03 · LiveInternet</a><a href="lab-4.html">04 · SberAds / Топ-100</a><a href="lab-5.html">05 · Рейтинг Mail.ru / MyTracker</a></nav><footer>Лабораторные работы 1–5<br>Октябрь 2026</footer></aside><main id="main"><span class="eyebrow">Учебный стенд / Обзор</span><h1>Лабораторные работы 1–5</h1><p class="lead">Отчёты и исследование посещаемости на одном учебном сайте.</p><div class="notice"><p><strong>Счётчики подключены 07.10.2026.</strong> Для практических работ требуется наблюдение в течение 1–2 недель и минимум 50 пользователей. LiveInternet, Sber Ads и MyTracker установлены на всех шести страницах. Проверка поступления данных и накопление выборки отмечены в отчётах.</p></div>
 <div class="stat-row"><div><strong>5</strong>лабораторных работ</div><div><strong>6</strong>страниц сайта</div><div><strong>3</strong>сервиса аналитики</div></div>
 <section class="paper"><h2>Объект исследования</h2><p>Учебный сайт курса «Веб-аналитика». Его задача — предоставить читателю пять отчётов и помочь найти материал конкретной работы. Аудитория — студенты и преподаватель курса.</p><p>Главная страница и пять самостоятельных страниц отчётов дают шесть адресов для анализа входов, просмотров и переходов. Ключевые показатели: пользователи, просмотры страниц, глубина визита и источники переходов. Содержание отчётов доступно на мобильных устройствах и для печати.</p><p>Результаты тестовых открытий и реальные посещения нужно различать. Тестовые действия используются для проверки установки, а выводы об аудитории — только после накопления достаточной статистики.</p></section>
-<div class="grid"><a class="card" href="lab-1.html"><div class="number">01</div><h2>Внутренняя статистика</h2><p>Три лог-анализатора, классификация и контрольные вопросы.</p><small>Обзор и ответы подготовлены</small></a><a class="card" href="lab-2.html"><div class="number">02</div><h2>Внешняя статистика</h2><p>Сравнение сервисов, измеримые цели и ошибки усреднения.</p><small>Теоретический отчёт</small></a><a class="card" href="lab-3.html"><div class="number">03</div><h2>LiveInternet</h2><p>Регистрация счётчика и исследование посещаемости сайта.</p><small>Ожидается регистрация и сбор данных</small></a><a class="card" href="lab-4.html"><div class="number">04</div><h2>SberAds / Топ-100</h2><p>Событийная аналитика, отчёты и целевые действия.</p><small>Ожидается регистрация и сбор данных</small></a><a class="card" href="lab-5.html"><div class="number">05</div><h2>Рейтинг Mail.ru / MyTracker</h2><p>Настройка веб-счётчика, целей и сегментов.</p><small>Ожидается регистрация и сбор данных</small></a></div><footer class="site-footer"><a href="https://github.com/DimazikSkyter/web-analytics-labs">Исходники на GitHub</a><p>Учебный проект · 2026</p><div id="counter-badges"></div></footer></main></body></html>
+<div class="grid"><a class="card" href="lab-1.html"><div class="number">01</div><h2>Внутренняя статистика</h2><p>Три лог-анализатора, классификация и контрольные вопросы.</p><small>Обзор и ответы подготовлены</small></a><a class="card" href="lab-2.html"><div class="number">02</div><h2>Внешняя статистика</h2><p>Сравнение сервисов, измеримые цели и ошибки усреднения.</p><small>Теоретический отчёт</small></a><a class="card" href="lab-3.html"><div class="number">03</div><h2>LiveInternet</h2><p>Регистрация счётчика и исследование посещаемости сайта.</p><small>Код подключён; проверяется сбор данных</small></a><a class="card" href="lab-4.html"><div class="number">04</div><h2>SberAds / Топ-100</h2><p>Событийная аналитика, отчёты и целевые действия.</p><small>Код подключён; проверяется сбор данных</small></a><a class="card" href="lab-5.html"><div class="number">05</div><h2>Рейтинг Mail.ru / MyTracker</h2><p>Настройка веб-счётчика, целей и сегментов.</p><small>Код подключён; проверяется сбор данных</small></a></div><footer class="site-footer"><a href="https://github.com/DimazikSkyter/web-analytics-labs">Исходники на GitHub</a><p>Учебный проект · 2026</p><div id="counter-badges"><!--LiveInternet logo--><a href="https://www.liveinternet.ru/click"
+target="_blank" rel="noopener"><img src="https://counter.yadro.ru/logo?52.6"
+title="LiveInternet: показано число просмотров и посетителей за 24 часа"
+alt="LiveInternet — просмотры и посетители за 24 часа" style="border:0" width="88" height="31"/></a><!--/LiveInternet-->
+<span id="sber-counter-badge" aria-label="Счётчик Sber Ads / Топ-100"></span>
+</div></footer></main></body></html>
