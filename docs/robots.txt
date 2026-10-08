@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dimazikskyter.github.io/web-analytics-labs/sitemap.xml

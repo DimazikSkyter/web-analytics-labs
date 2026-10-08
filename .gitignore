@@ -4,3 +4,11 @@ __pycache__/
 *.zip
 .env
 .env.*
+site/
+phone-preview/
+content/lab-*.html
+status.json
+assets/*.jpg
+assets/icon.png
+assets/verification-*.json
+site-current-*.jpg
